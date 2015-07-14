@@ -1,3 +1,3 @@
 # Page Transitions
 
-Add the following to the config.xml file: <gap:plugin name="com.telerik.plugins.nativepagetransitions" />
+Add the following to the config.xml file: "com.telerik.plugins.nativepagetransitions"
