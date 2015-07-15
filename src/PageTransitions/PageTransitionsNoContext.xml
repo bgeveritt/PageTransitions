@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="PageTransitions.widget.PageTransitions" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
-    <name>Page Transitions</name>
+<widget id="PageTransitions.widget.PageTransitionsNoContext" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Page Transitions (No Context)</name>
     <description>Create page transitions for your Hybrid Mobile Apps</description>
 
     <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAd0lEQVR42q1TQQ7AIAjjEfz/Oe4Ah/mizSWYEFM3cDbpsRVKJZqDG9XIlMQjqI2X8cyaqBN3SsagmMCLCy2gG4R2VvAKMjhsIkaBScBAxmBRYFHKFgO2caIrKOoGT06FDMoY4pYzfhVJs0WSv1X2wS59Jh/sa2A3/2BcyNllo4UAAAAASUVORK5CYII=</icon>
@@ -17,22 +17,15 @@
                 <enumerationValue key="right">Right</enumerationValue>
             </enumerationValues>
         </property>
-        <property key="btnCaption" type="string" required="true">
-            <caption>Button Caption</caption>
+        <property key="clsName" type="string" required="true">
+            <caption>Class Name</caption>
             <category>Settings</category>
-            <description>Caption of the button</description>
+            <description>Name of the class to apply page transition to when clicked/tapped</description>
         </property>
-        <property key="microflow" type="microflow" required="true">
-            <caption>Microflow</caption>
-            <category>Settings</category>
-            <description>The microflow to be executed.</description>
-            <returnType type="Boolean" />
-        </property>        
         <property key="duration" type="integer" required="true" defaultValue="400">
             <caption>Duration</caption>
             <category>Settings</category>
             <description>How long the transition should take palce (in milliseconds)</description>
-        </property>           
+        </property>        
     </properties>
 </widget>
-
